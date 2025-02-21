@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
 
-const API_URL = 'YOUR_BACKEND_URL/bfhl'; // Replace with your deployed backend URL
+const API_URL = 'https://bhfl-challenge.vercel.app//bfhl'; // Replace with your deployed backend URL
 
 export default function App() {
   const [jsonInput, setJsonInput] = useState('');
