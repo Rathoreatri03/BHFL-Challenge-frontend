@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
+import './styles.css';  // Import the CSS file
 
 const API_URL = 'https://bhfl-challenge.vercel.app/bfhl'; // Replace with your deployed backend URL
 

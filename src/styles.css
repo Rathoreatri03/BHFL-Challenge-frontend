@@ -1,0 +1,121 @@
+/* General styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    max-width: 650px;
+    width: 90%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    height: 140px;
+    padding: 12px;
+    border: 1.8px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 16px;
+    resize: none;
+    background-color: #fff;
+    transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.3);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #2563eb, #3b82f6);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #1e40af, #2563eb);
+    transform: translateY(-2px);
+}
+
+/* Error message */
+.error-message {
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Select Dropdown */
+.basic-multi-select {
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+.basic-multi-select .css-2b097c-container {
+    font-size: 16px;
+}
+
+.basic-multi-select .css-yk16xz-control {
+    border-radius: 10px;
+    border: 1.8px solid #d1d5db;
+    background: #fff;
+    transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.basic-multi-select .css-yk16xz-control:hover,
+.basic-multi-select .css-yk16xz-control:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.3);
+}
+
+/* JSON Response Box */
+pre {
+    background: #f3f4f6;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+    overflow-x: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    textarea {
+        height: 120px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
